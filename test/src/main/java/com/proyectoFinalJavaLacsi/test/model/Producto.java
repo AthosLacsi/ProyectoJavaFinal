@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Producto {
@@ -16,6 +18,10 @@ public class Producto {
     private String descripcion;
     private Double precio;
     private Integer stock;
+
+        @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     // Getters and Setters
     public Long getId() {
