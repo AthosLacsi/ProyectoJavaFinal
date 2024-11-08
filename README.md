@@ -44,7 +44,7 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 1. Clona el repositorio:
    ```bash
-   git clone <url_del_repositorio>
+   git clone <https://github.com/AthosLacsi/ProyectoJavaFinal.git>
 Navega al directorio del proyecto:
 
 cd <nombre_del_proyecto>
